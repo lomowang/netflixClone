@@ -5,18 +5,23 @@ import React, { useEffect, useState } from "react";
 function Banner() {
   // TMDB請求數據
   const [movie, setMovie] = useState([]);
-
+  // 使用 useEffect 鉤子，處理數據獲取和設置 'movie' 狀態的邏輯
   useEffect(() => {
     async function fetchData() {
+      // 發送 GET 請求到 TMDB API 的 'fetchNetflixOriginals' 端點
       const request = await axios.get(requests.fetchNetflixOriginals);
+
+      // 從請求返回的數據中隨機選取一個節目並設置為 'movie' 狀態
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
     }
+    // 執行 'fetchData' 函式
     fetchData();
   }, []);
+  // 在控制台中輸出 'movie' 狀態，用於檢查數據
   console.log(movie);
 
   // 縮短輸入的字串
