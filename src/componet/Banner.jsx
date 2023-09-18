@@ -31,11 +31,9 @@ function Banner() {
 
   return (
     <header
-      className="relative h-96 text-white"
+      className="relative h-96 bg-black text-white bg-cover  bg-center bg-no-repeat"
       style={{
-        backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        backgroundPosition: "center center",
       }}
     >
       <div className="ml-8 pt-36 h-48 " alt="bannerContents">

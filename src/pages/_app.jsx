@@ -4,7 +4,7 @@ import "src/index.css";
 
 function _app() {
   return (
-    <div>
+    <div className="bg-black">
       <HomeScreen />
     </div>
   );

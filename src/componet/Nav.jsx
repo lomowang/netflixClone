@@ -23,10 +23,10 @@ function Nav() {
     <div
       //  如果show為true 就添加bg-black 如果是false 就不添加 背景顏色保持默認
       className={` ${
-        show ? "bg-black" : ""
+        show ? "bg-black " : ""
       } fixed top-0 p-10 h-7 w-full z-10 transition-all duration-500 ease-in`}
     >
-      <div className=" flex justify-between  ">
+      <div className="   flex justify-between  ">
         <img
           className="left-0  top-5 w-20 object-contain pl-5 cursor-pointer "
           src="/pngwing.com.png"

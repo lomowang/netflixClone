@@ -13,4 +13,4 @@ const requests = {
 
 export default requests;
 
-// https://api.themoviedb.org/3/trending/all/week?api_key=5d7ac24e63419994fda11db9f90c8f2b&with_networks=213
+// https://api.themoviedb.org/3/discover/movie?api_key=5d7ac24e63419994fda11db9f90c8f2b&with_networks=10749
